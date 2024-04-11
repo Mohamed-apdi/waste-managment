@@ -9,7 +9,7 @@ function Footer() {
    <footer className="py-7 bg-[#2196F3] text-white">
     <div className=" max-w-7xl mx-auto ">
       <div className="flex flex-row justify-center mx-10">
-        <div className=" w-4/5">
+        <div className=" w-3/4">
           <h4 className="mb-4 font-bold">Contact Us</h4>
           <div>
             <h1></h1>
@@ -21,7 +21,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" w-3/5">
+        <div className=" w-2/4">
           <h4 className="mb-4 font-bold">Information</h4>
           <div>
             <ul>
@@ -33,25 +33,13 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className=" w-3/5">
+        <div className=" w-2/4">
           <h4 className="mb-4 font-bold">Account</h4>
           <div>
             <ul>
             <li><Link className=" hover:underline text-[14px]">About Us</Link></li>
             <li><Link className=" hover:underline text-[14px]">FAQ</Link></li>
             <li><Link className=" hover:underline text-[14px]">Contact</Link></li>
-            </ul>
-          </div>
-        </div>
-        <div className=" w-4/5">
-          <h4 className="mb-4 font-bold">Quick Links</h4>
-          <div>
-            <ul>
-            <li><Link className=" hover:underline text-[14px]">Laptops</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Mobiles</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Headphones</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Tablets</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Smart Watches</Link></li>
             </ul>
           </div>
         </div>
