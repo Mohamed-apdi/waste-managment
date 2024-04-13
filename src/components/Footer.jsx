@@ -6,7 +6,7 @@ function Footer() {
   return (
    <>
   
-   <footer className="py-7 bg-[#2196F3] text-white">
+   <footer className="py-7 bg-white/40 text-black">
     <div className=" max-w-7xl mx-auto ">
       <div className="flex flex-row justify-center mx-10">
         <div className=" w-3/4">
@@ -19,6 +19,7 @@ function Footer() {
               <a href="#"> <FaLinkedin className=" text-3xl" /></a>
               <a href="#"> <FaYoutube className=" text-3xl" /></a>
             </div>
+            <div className="logo font-bold mt-5"><img className='w-40' src="../../public/logo/Logo Files/For Web/svg/Black logo - no background.svg" alt="" /></div>
           </div>
         </div>
         <div className=" w-2/4">
@@ -29,7 +30,6 @@ function Footer() {
             <li><Link className=" hover:underline text-[14px]">Refund Policy</Link></li>
             <li><Link className=" hover:underline text-[14px]">Cookie policy</Link></li>
             <li><Link className=" hover:underline text-[14px]">Terms & Conditions</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Blogs</Link></li>
             </ul>
           </div>
         </div>
@@ -46,12 +46,12 @@ function Footer() {
       </div>
     </div>
    </footer>
-   <footer className="py-4 bg-[#2196F3] text-white">
+   <footer className="py-4 bg-white/40 text-black">
     <div className="max-w-7xl mx-auto">
     <div className="flex flex-row">
       <div className=" w-full">
         <p className="text-center mb-0">
-          &copy; {new Date().getFullYear()} Powered by codewithmoha
+          &copy; {new Date().getFullYear()} Powered by MTI team 2
           </p>
       </div>
     </div>

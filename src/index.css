@@ -82,6 +82,15 @@
 
   /* section home start */
 
-
+  .shadow-box{
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.19);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.19);
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.19);
+  }
+  .shadow-box:hover{
+    -webkit-box-shadow: 2px 3px 15px 0px rgba(0,0,0,0.19);
+    -moz-box-shadow: 2px 3px 15px 0px rgba(0,0,0,0.19);
+    box-shadow: 2px 3px 15px 0px rgba(0,0,0,0.19);
+  }
 
   /* section home end */

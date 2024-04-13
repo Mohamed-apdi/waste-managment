@@ -21,19 +21,18 @@ function Header() {
   }, []);
 
   return (
-    <header className={`py-2  px-2 ${isScrolled ? 'fixed top-0 left-0 right-0  shadow-md backdrop-blur-xl bg-white/30' : 'relative'}`}>
+    <header className={`py-2  px-2 ${isScrolled ? 'fixed top-0 left-0 right-0 z-10 shadow-md backdrop-blur-xl bg-white/60' : 'relative'}`}>
       <div className="max-w-7/12 mx-auto md:max-w-full">
-        <div className="flex justify-between items-center text-black">
-          <div className="logo font-bold">WM</div>
+        <div className="flex justify-between items-center ">
+          <div className="logo font-bold"><img className='w-10' src="../../public/logo/Logo Files/For Web/svg/Black logo - no background.svg" alt="" /></div>
           <div className="flex gap-4 text-center text-lg">
-            <Link to={"/"} className="hover:underline transition-all">Home</Link>
-            <Link to={"/services"} className="hover:underline transition-all">Services</Link>
-            <Link to={"/about"} className="hover:underline transition-all">About</Link>
-            <Link to={"/contact"} className="hover:underline transition-all">Contact</Link>
+            <Link to={"/"} className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
+            <Link to={"/services"} className="text-sm font-semibold leading-6 text-gray-900">Services</Link>
+            <Link to={"/about"} className="text-sm font-semibold leading-6 text-gray-900">About</Link>
+            <Link to={"/contact"} className="text-sm font-semibold leading-6 text-gray-900">Contact</Link>
           </div>
-          <div className="btn flex gap-4">
-            <button className="text-sm px-4 py-1 rounded-md text-Black  bg-inherit  border-[1px] border-[#2997ff] font-bold  hover:bg-[#2997ff]  transition duration-300 ease-in-out">Login</button>
-            <button className="text-sm px-4 py-1 rounded-md text-Black  bg-inherit  border-[1px] border-[#2997ff] font-bold  hover:bg-[#2997ff]  transition duration-300 ease-in-out">Sign Up</button>
+          <div className="text-sm font-semibold leading-6 text-gray-900">
+            <Link to={"/select-one"}> Log in <span aria-hidden="true">&rarr;</span></Link> 
           </div>
         </div>
       </div>
