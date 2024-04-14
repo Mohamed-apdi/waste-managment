@@ -34,12 +34,11 @@ function Footer() {
           </div>
         </div>
         <div className=" w-2/4">
-          <h4 className="mb-4 font-bold">Account</h4>
+          <h4 className="mb-4 font-bold">Quick Links</h4>
           <div>
             <ul>
-            <li><Link className=" hover:underline text-[14px]">About Us</Link></li>
-            <li><Link className=" hover:underline text-[14px]">FAQ</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Contact</Link></li>
+            <li><Link to={"/about"} className=" hover:underline text-[14px]">About Us</Link></li>
+            <li><Link to={"/contact"} className=" hover:underline text-[14px]">Contact</Link></li>
             </ul>
           </div>
         </div>
