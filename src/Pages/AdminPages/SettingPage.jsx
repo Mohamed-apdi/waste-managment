@@ -1,40 +1,15 @@
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Input } from "@/components/ui/input"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { CircleUser, Menu, Package2 } from "lucide-react"
+import { Link } from "react-router-dom"
 
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Menu, CircleUser, Package2, } from "lucide-react";
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-
-function AnalyticsPage() {
-    const data = [
-        { name: "Hodan", count: 21 },
-        { name: "BarUbax", count: 33 },
-        { name: "Banadir", count: 11 },
-        { name: "Madiino", count: 83 },
-        { name: "Karan", count: 144 },
-    ];
-
-    return (
-        <>
-             <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+function SettingPage() {
+  return (
+    <>
+     <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <Link
            to={"/"}
@@ -142,50 +117,26 @@ function AnalyticsPage() {
           </DropdownMenu>
         </div>
       </header>
-            <main className="p-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Total Companies</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p>24 - 13.1% increase</p>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Customers</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p>+250 - 47.3% increase</p>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Collections</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p>+12 - 3% increase</p>
-                        </CardContent>
-                    </Card>
-                </div>
-                <h2 className="text-5xl text-black  text-center mb-6 scroll-m-20  font-semibold tracking-tight">Collections Analytics</h2>
-                <div className="my-8 w-full h-64 md:mx-auto md:h-96">  
-                    <ResponsiveContainer width="70%" height="100%">
-                        <LineChart data={data}>
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" />
-                            <YAxis />
-                            <Tooltip />
-                            <Legend />
-                            <Line type="monotone" dataKey="count" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        </LineChart>
-                    </ResponsiveContainer>
-                </div>
 
-            </main>
-        </>
-    );
+
+    <Card x-chunk="dashboard-04-chunk-1">
+              <CardHeader>
+                <CardTitle>Store Name</CardTitle>
+                <CardDescription>
+                  Used to identify your store in the marketplace.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form>
+                  <Input placeholder="Store Name" />
+                </form>
+              </CardContent>
+              <CardFooter className="border-t px-6 py-4">
+                <Button>Save</Button>
+              </CardFooter>
+            </Card>
+    </>
+  )
 }
 
-export default AnalyticsPage;
+export default SettingPage

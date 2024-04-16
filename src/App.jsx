@@ -14,6 +14,7 @@ import OrdersPage from "./Pages/AdminPages/OrdersPage"
 import CompanysPage from "./Pages/AdminPages/CompanysPage"
 import CustomersPage from "./Pages/AdminPages/CustomersPage"
 import AnalyticsPage from "./Pages/AdminPages/AnalyticsPage"
+import SettingPage from "./Pages/AdminPages/SettingPage"
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Route path="/companys" element={<CompanysPage/>}/>
       <Route path="/customers" element={<CustomersPage/>}/>
       <Route path="/analytics" element={<AnalyticsPage/>}/>
+      <Route path="/admin-setting" element={<SettingPage/>}/>
     </Routes>
     </BrowserRouter>
     </>

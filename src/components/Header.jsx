@@ -26,10 +26,13 @@ function Header() {
         <div className="flex justify-between items-center ">
           <div className="logo font-bold"><img className='w-10' src="../../public/logo/Logo Files/For Web/svg/Black logo - no background.svg" alt="" /></div>
           <div className="flex gap-4 text-center text-lg">
-            <Link to={"/"} className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
-            <Link to={"/services"} className="text-sm font-semibold leading-6 text-gray-900">Services</Link>
-            <Link to={"/about"} className="text-sm font-semibold leading-6 text-gray-900">About</Link>
-            <Link to={"/contact"} className="text-sm font-semibold leading-6 text-gray-900">Contact</Link>
+            <Link to={"/"} className="text-sm font-semibold leading-6 text-gray-900 hover:underline">Home</Link>
+            <Link to={"/services"} className="text-sm font-semibold leading-6 text-gray-900 hover:underline">Services</Link>
+            <Link to={"/about"} className="text-sm font-semibold leading-6 text-gray-900 hover:underline">About</Link>
+            <Link to={"/contact"} className="text-sm font-semibold leading-6 text-gray-900 hover:underline">Contact</Link>
+            <Link to={"/dashboard"} className="text-sm font-semibold leading-6 text-gray-900 hover:underline">Admin</Link>
+            <Link to={"/company-dashbard"} className="text-sm font-semibold leading-6 text-gray-900 hover:underline">Company</Link>
+            <Link to={"/customer-dashbard"} className="text-sm font-semibold leading-6 text-gray-900 hover:underline">Customer</Link>
           </div>
           <div className="text-sm font-semibold leading-6 text-gray-900">
             <Link to={"/select-one"}> Log in <span aria-hidden="true">&rarr;</span></Link> 

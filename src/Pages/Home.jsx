@@ -17,20 +17,17 @@ import {
 function Home() {
   return (
     <>
-    
     <section className="bg-[#ffff]">
         <div className="container mx-auto h-screen mt-[-20px] flex justify-between items-center">
-          
           <div className="text-center space-x-4">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">Streamlining Waste Management for a Greener Tomorrow</h1>
             <p className="leading-7 [&:not(:first-child)]:mt-6">Connecting communities with eco-friendly waste solutions.</p>
-           <Link to={"/dashboard"}> <Button className="mt-5 px-8 py-3 bg-black scroll-m-20 text-xl font-semibold tracking-tight text-white border-inherit border-[1.6px] border-[#f4f4f5]  hover:bg-black/80 hover:text-white rounded-xl transition duration-300 ease-in-out">Get Started</Button></Link>
+           <Link to={"/select-one"}> <Button className="mt-5 px-8 py-3 bg-black scroll-m-20 text-xl font-semibold tracking-tight text-white border-inherit border-[1.6px] border-[#f4f4f5]  hover:bg-black/80 hover:text-white rounded-xl transition duration-300 ease-in-out">Get Started</Button></Link>
           </div>
         </div>
     </section>
 
       <section className="py-10 bg-white/60">
-        
         <div className="container mx-auto">
           <h2 className="text-5xl text-black  text-center mb-6 scroll-m-20  font-semibold tracking-tight">Our Innovative Feature</h2>
           <p className="leading-7 [&:not(:first-child)]:mt-6 max-w-3xl text-center mx-auto">To revolutionize waste management through technology, connecting households and businesses with reliable waste disposal companies. Our goal is to promote recycling and sustainable practices for a cleaner planet.</p>
@@ -135,7 +132,7 @@ function Home() {
             </div>
 
             <div className="w-1/3 shadow-2xl p-4 rounded-sm">
-              <p className="leading-7 text-sm [&:not(:first-child)]:mt-6">EcoLink&apos;s platform has been instrumental in helping us achieve our corporate sustainability goals. Their digital payment system and detailed tracking have streamlined our operations significantly.</p>
+              <p className="leading-7 text-sm [&:not(:first-child)]:mt-6">EcoLink's platform has been instrumental in helping us achieve our corporate sustainability goals. Their digital payment system and detailed tracking have streamlined our operations significantly.</p>
               <div className="flex gap-x-3 p-3">
               <Avatar className="hidden h-9 w-9 sm:flex">
                     <AvatarImage src="/avatars/02.png" alt="Avatar" />
